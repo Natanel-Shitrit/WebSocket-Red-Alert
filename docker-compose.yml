@@ -1,0 +1,7 @@
+services:
+  websocket-red-alert:
+    container_name: websocket-red-alert
+    build: .
+    ports:
+      - '58000:80'
+    restart: unless-stopped
